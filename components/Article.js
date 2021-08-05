@@ -115,46 +115,6 @@ const data = [
   Refresh the page to see the new article.
 */
 
-// function articleMaker(obj){
-
-//   //Creation
-//   let newArticle = document.createElement('div');
-//   newArticle.classList.toggle('article');
-//   let newTitle = document.createElement('h2');
-//   let dateP = document.createElement('p');
-//   let newP1 = document.createElement('p');
-//   let newP2 = document.createElement('p');
-//   let newP3 = document.createElement('p');
-//   let btn = document.createElement('span');
-
-//   //Child Care
-//   newArticle.appendChild(newTitle);
-//   newArticle.appendChild(dateP);
-//   newArticle.appendChild(newP1);
-//   newArticle.appendChild(newP2);
-//   newArticle.appendChild(newP3);
-//   newArticle.appendChild(btn);
-
-//   //Classes
-//   newArticle.textContent = obj.title;
-//   dateP.textContent = obj.date;
-//   newP1.textContent = obj.firstParagraph;
-//   newP2.textContent = obj.secondParagraph;
-//   newP3.textContent = obj.thirdParagraph;
-//   btn.textContent = '+';
-
-//   //Events
-//   btn.addEventListener('click', event => {
-//     newArticle.classList.toggle('article-open');
-//   })
-// console.log(newArticle)
-//   return newArticle
-// }
-
-// data.forEach(article => {
-//   document.querySelector('.articles').appendChild(articleMaker(article));
-// });
-
 function articleMaker({title, date, firstParagraph, secondParagraph, thirdParagraph}){
 
   //Create Elements
